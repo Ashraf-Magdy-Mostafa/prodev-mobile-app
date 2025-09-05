@@ -1,5 +1,5 @@
 import { BACKGROUNDIMAGE, HEROLOGO } from "@/constants";
-import { styles as main } from "@/styles/_mainstyle";
+import { styles as main } from "@/styles/_main";
 import { useRouter } from "expo-router";
 import React from "react";
 import { Image, ImageBackground, SafeAreaView, Text, TouchableOpacity, View } from "react-native";
@@ -30,7 +30,7 @@ export default function Index() {
         <View style={{ flex: 1 }} />
 
         <View style={main.buttonGroup}>
-          <TouchableOpacity style={main.buttonPrimary} onPress={() => router.push("/sign")}>
+          <TouchableOpacity style={main.buttonPrimary} onPress={() => router.push("/signin")}>
             <Text style={main.buttonPrimaryText}>Sign In</Text>
           </TouchableOpacity>
 

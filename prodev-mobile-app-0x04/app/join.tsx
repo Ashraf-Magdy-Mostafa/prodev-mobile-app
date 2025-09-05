@@ -1,5 +1,5 @@
 import { FACEBOOKLOGO, GOOGLELOGO } from "@/constants";
-import { styles as join } from "@/styles/_joinstyle";
+import { styles as join } from "@/styles/_join";
 import { useRouter } from "expo-router";
 import React, { useState } from "react";
 import { Image, Pressable, SafeAreaView, Text, TextInput, TouchableOpacity, View } from "react-native";
@@ -91,7 +91,7 @@ export default function Join() {
 
             <View style={join.signupgroup}>
                 <Text style={join.signupTitleText}>Already have an account? </Text>
-                <TouchableOpacity onPress={() => router.push("/sign")}>
+                <TouchableOpacity onPress={() => router.push("/signin")}>
                     <Text style={join.signupSubTitleText}>Sign in</Text>
                 </TouchableOpacity>
             </View>
