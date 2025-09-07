@@ -38,7 +38,7 @@ export default function Index() {
             <Text style={main.buttonSecondaryText}>Join Now</Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={() => router.replace("/(home)")}>
+        <TouchableOpacity onPress={() => router.push("/(home)")}>
           <Text style={main.buttonPrimaryText}>Go To Home</Text>
         </TouchableOpacity>
         <View style={{ height: 40 }} />
